@@ -14,12 +14,28 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <script src="systemjs.config.js"></script>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+
+    <my-app class="main">
+      <div class="login center-block vertical-center">
+        <div class="container">
+          Loading...
+        </div>
+      </div>
+    </my-app>
+
+    <footer class="footer">
+      <p>Copyright &copy; 2015 siemplify All rights reserved</p>
+    </footer>
+
   </body>
 </html>
