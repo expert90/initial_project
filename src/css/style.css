@@ -116,17 +116,18 @@ body {
 
 @media (min-width: 992px) {
   .container { 
-    width: 924px;
+    width: 954px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 924px; 
+    width: 954px; 
   }
 }
 
 .cinput {
+  display: table;
   max-width: 924px;
   min-height: 100%;
   border: solid 2px #2c2c2c;

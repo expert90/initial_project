@@ -1,7 +1,12 @@
-import { RouterModule  }     from '@angular/router';
+import { RouterModule, Routes  } from '@angular/router';
 
-import { LoginComponent }    from './module/login/component/login';
+import { LoginComponent } from './module/login/component/login';
+import { WorkComponent } from './module/work/component/work';
 
-export const mainRouting = RouterModule.forChild([
-    { path: 'login', component: LoginComponent }
-]);
+const appRoutes: Routes = [
+	{ path: '', component: WorkComponent, pathMatch: 'full' },
+	{ path: 'login', component: LoginComponent },
+	{ path: 'workspace', component: WorkComponent }
+];
+
+export const mainRouting = RouterModule.forRoot(appRoutes);

@@ -6,7 +6,8 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+      'npm:': 'node_modules/',
+      'primeng/*': 'node_modules/primeng/*'
     },
     // map tells the System loader where to look for things
     map: {
@@ -22,10 +23,16 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js',
+      '@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.js',
+      '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js',
+      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
 
       // other libraries
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'primeng': 'npm:primeng',
+      'chart.js': 'npm:chart.js/dist/Chart.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -38,6 +45,10 @@
         }
       },
       rxjs: {
+        defaultExtension: 'js'
+      },
+      'node_modules/primeng': {
+        format: 'cjs',
         defaultExtension: 'js'
       }
     }
