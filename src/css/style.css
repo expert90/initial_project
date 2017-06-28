@@ -135,6 +135,10 @@ body {
   background-color: #101010;
 }
 
+.cinput .navbar {
+  z-index: 100;
+}
+
 .cinput .navbar-fixed-top {
   left: auto;
   right: auto;
@@ -285,7 +289,6 @@ body {
   display: inline-block;
   margin-left: 50px;
   margin-right: 10px;
-  text-align: center;
 }
 
 .cinput .container input.form-control.lg {
